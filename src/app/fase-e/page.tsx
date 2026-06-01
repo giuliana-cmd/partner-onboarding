@@ -12,6 +12,7 @@ import {
 import { Checklist } from '@/components/Checklist';
 import { ProgressBar } from '@/components/ProgressBar';
 import { PhaseNav } from '@/components/PhaseNav';
+import { FaseVideos } from '@/components/FaseVideos';
 import {
   Sidebar,
   TimelineSidebar,
@@ -136,6 +137,9 @@ export default function FaseEPage() {
             activePhaseIndex={4}
           />
         </section>
+
+        {/* Videos de la fase */}
+        <FaseVideos faseLetter="E" />
 
         {/* Two-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 pb-10">

@@ -13,6 +13,7 @@ import {
   EscalationBox,
 } from '@/components/Sidebar';
 import { Phase0Readiness } from '@/components/ReadinessAssessment';
+import { FaseVideos } from '@/components/FaseVideos';
 import {
   fase0Checklist,
   fase0StorageKey,
@@ -156,6 +157,9 @@ export default function Fase0Page() {
             activePhaseIndex={0}
           />
         </section>
+
+        {/* Videos de la fase */}
+        <FaseVideos faseLetter="0" />
 
         {/* Content grid */}
         <div className="grid grid-cols-[1fr_340px] gap-8 max-lg:grid-cols-1">
